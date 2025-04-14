@@ -8,9 +8,9 @@ const Contact = () => {
     <>
       {/* HERO */}
       <section
-        className="relative min-h-[80vh] flex items-center justify-center text-white bg-center bg-cover bg-fixed"
+        className="relative min-h-[90vh] flex items-center justify-center text-white bg-center bg-cover bg-fixed"
         style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.1)), url('src/assets/Fondo.jpg')`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0,0,0,0.2)), url('https://www.hilton.com/im/en/PHXTYPY/17094374/5d4-0975-6-7.jpg?impolicy=crop&cw=3750&ch=2812&gravity=NorthWest&xposition=625&yposition=0&rw=1200&rh=900')`,
         }}
       >
         <div className="text-center px-6 z-10">
@@ -23,42 +23,57 @@ const Contact = () => {
 
       {/* CONTACTO DIRECTO */}
       <section className="bg-[#FFF8E7] py-20 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          {/* Opción 1 */}
-          <div className="flex flex-col items-center gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+          {/* Teléfono */}
+          <a href="tel:4421323281" className="flex flex-col items-center gap-2 hover:scale-105 transition-transform">
             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-500 text-2xl">
               <FaPhoneAlt />
             </div>
             <p className="text-sm font-semibold">Llámanos</p>
-            <p className="text-gray-600 text-sm">998 105 3623</p>
-          </div>
+            <p className="text-gray-600 text-sm">4421323281</p>
+          </a>
 
-          {/* Opción 2 */}
-          <div className="flex flex-col items-center gap-3">
-            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-green-500 text-2xl">
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/4421323281"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
+          >
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-500 text-2xl">
               <FaWhatsapp />
             </div>
             <p className="text-sm font-semibold">WhatsApp</p>
-            <a
-              href="https://wa.me/529981053623"
-              target="_blank"
-              className="text-red-500 hover:underline text-sm"
-            >
-              Escríbenos ahora
-            </a>
-          </div>
+            <p className="text-gray-600 text-sm">Escríbenos</p>
+          </a>
 
-          {/* Opción 3 */}
-          <div className="flex flex-col items-center gap-3">
-            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-500 text-2xl">
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/tuPagina"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
+          >
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl">
+              <FaFacebookF />
+            </div>
+            <p className="text-sm font-semibold">Facebook</p>
+            <p className="text-gray-600 text-sm">@tuPagina</p>
+          </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/tuPerfil"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
+          >
+            <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl">
               <FaInstagram />
             </div>
-            <p className="text-sm font-semibold">Síguenos en redes</p>
-            <div className="flex gap-4 text-red-500 text-xl">
-              <a href="https://facebook.com" target="_blank"><FaFacebookF className="hover:text-red-600" /></a>
-              <a href="https://instagram.com" target="_blank"><FaInstagram className="hover:text-red-600" /></a>
-            </div>
-          </div>
+            <p className="text-sm font-semibold">Instagram</p>
+            <p className="text-gray-600 text-sm">@tuPerfil</p>
+          </a>
         </div>
       </section>
 

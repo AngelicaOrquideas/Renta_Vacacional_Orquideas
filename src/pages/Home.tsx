@@ -18,7 +18,7 @@ const Home: React.FC = () => {
   const handleSmartRedirect = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-      window.open("https://wa.me/529982210316?text=Hola%2C%20quiero%20hacer%20una%20reserva", "_blank");
+      window.open("https://wa.me/4421323281?text=Hola%2C%20quiero%20hacer%20una%20reserva", "_blank");
     } else {
       window.open("https://www.facebook.com/RentaVacacionalOrquidea", "_blank");
     }

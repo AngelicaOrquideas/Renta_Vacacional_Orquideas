@@ -17,8 +17,11 @@
         "wifi": true,
         "airConditioning": true,
         "beds": 1,
+        "bedrooms": 1,
+        "bathrooms": 1,
         "guests": 2,
-        "petFriendly": false
+        "petFriendly": false,
+        "pool": false
       }
     },
     {
@@ -38,8 +41,11 @@
         "wifi": true,
         "airConditioning": true,
         "beds": 3,
+        "bedrooms": 2,
+        "bathrooms": 2,
         "guests": 5,
-        "petFriendly": true
+        "petFriendly": true,
+        "pool": false
       }
     },
     {
@@ -59,11 +65,13 @@
         "wifi": false,
         "airConditioning": false,
         "beds": 2,
+        "bedrooms": 3,
+        "bathrooms": 1,
         "guests": 4,
-        "petFriendly": true
+        "petFriendly": true,
+        "pool": false
       }
     },
-    
     {
       "id": 4,
       "title": "Loft moderno en el centro de la ciudad",
@@ -74,15 +82,18 @@
       "lat": 19.4326,
       "lng": -99.1332,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1gk5vX8x7G3m1qZc5Jz4jYwW2b7l8f3a4rA&usqp=CAU"
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg?im_w=720"
       ],
       "description": "Loft elegante con cocina equipada y balcón.",
       "features": {
         "wifi": true,
         "airConditioning": true,
         "beds": 1,
+        "bedrooms": 1,
+        "bathrooms": 1,
         "guests": 2,
-        "petFriendly": false
+        "petFriendly": false,
+        "pool": false
       }
     },
     {
@@ -95,15 +106,67 @@
       "lat": 20.6534,
       "lng": -105.2259,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1gk5vX8x7G3m1qZc5Jz4jYwW2b7l8f3a4rA&usqp=CAU"
+        "https://a0.muscache.com/im/pictures/c22305dd-1648-4f8a-a40f-69c32e1c16bb.jpg?im_w=720"
       ],
       "description": "Casa espaciosa con piscina privada y acceso a la playa.",
       "features": {
         "wifi": true,
         "airConditioning": true,
         "beds": 4,
+        "bedrooms": 3,
+        "bathrooms": 3,
         "guests": 8,
-        "petFriendly": true
+        "petFriendly": true,
+        "pool": true
+      }
+    },
+    
+    {
+      "id": 6,
+      "title": "Cabaña en la montaña",
+      "pricePerNight": 800,
+      "pricePerWeek": 4500,
+      "pricePerMonth": 16000,
+      "location": "Valle de Bravo",
+      "lat": 19.1932,
+      "lng": -100.1131,
+      "images": [
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg"
+      ],
+      "description": "Cabaña acogedora con chimenea y vistas a la montaña.",
+      "features": {
+        "wifi": false,
+        "airConditioning": false,
+        "beds": 2,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "guests": 4,
+        "petFriendly": true,
+        "pool": false
+      }
+    },
+    {
+      "id": 7,
+      "title": "Villa de lujo con vista al mar",
+      "pricePerNight": 3500,
+      "pricePerWeek": 20000,
+      "pricePerMonth": 70000,
+      "location": "Acapulco",
+      "lat": 16.8531,
+      "lng": -99.8237,
+      "images": [
+      "https://static8.depositphotos.com/1009647/905/i/450/depositphotos_9052158-stock-photo-empty-room.jpg"
+      ],
+      "description": "Apartamento vacio.",
+      "features": {
+      "wifi": false,
+      "airConditioning": false,
+      "beds": 0,
+      "guests": 0,
+      "bedrooms": 0,
+        "bathrooms": 0,
+      "petFriendly": false,
+      "pool": false
       }
     }
   ]

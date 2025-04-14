@@ -1,86 +1,28 @@
-import React from 'react';
+// src/pages/Rooms.tsx (o donde renders RoomListSection)
+import RoomListSection from "../components/room/RoomListSection";
 
-interface RoomCardProps {
-    title: string;
-    description: string;
-    price: number;
-    imageUrl: string;
-}
-
-const RoomCard: React.FC<RoomCardProps> = ({ title, description, price, imageUrl }) => {
-    return (
-        <div style={styles.card}>
-            <img src={imageUrl} alt={title} style={styles.image} />
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <p><strong>${price.toFixed(2)}</strong> por noche</p>
+const Rooms = () => {
+  return (
+    <>
+      {/* Hero de habitaciones */}
+      <section
+        className="relative min-h-[90vh] flex items-center justify-center text-white bg-center bg-cover bg-fixed"
+        style={{
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0,0,0,0.2)), url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/b7/96/ee/hard-rock-hotel-cancun.jpg?w=700&h=-1&s=1')`,
+        }}
+      >
+        <div className="text-center px-6 z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">Nuestras Habitaciones</h1>
+          <p className="max-w-xl mx-auto text-white/80 text-base md:text-lg">
+            Encuentra el alojamiento ideal para tus vacaciones en Cancún.
+          </p>
         </div>
-    );
+      </section>
+
+      {/* Lista de habitaciones */}
+      <RoomListSection />
+    </>
+  );
 };
 
-const Catalogo: React.FC = () => {
-    const rooms = [
-        {
-            title: 'Habitación Deluxe',
-            description: 'Una habitación espaciosa con vista al mar.',
-            price: 120,
-            imageUrl: 'https://via.placeholder.com/150',
-        },
-        {
-            title: 'Suite Familiar',
-            description: 'Ideal para familias, con dos camas dobles.',
-            price: 200,
-            imageUrl: 'https://via.placeholder.com/150',
-        },
-        {
-            title: 'Habitación Económica',
-            description: 'Perfecta para viajeros con presupuesto limitado.',
-            price: 80,
-            imageUrl: 'https://via.placeholder.com/150',
-        },
-    ];
-
-    return (
-        <div style={styles.container}>
-            <h1>Catálogo de Habitaciones</h1>
-            <div style={styles.grid}>
-                {rooms.map((room, index) => (
-                    <RoomCard
-                        key={index}
-                        title={room.title}
-                        description={room.description}
-                        price={room.price}
-                        imageUrl={room.imageUrl}
-                    />
-                ))}
-            </div>
-        </div>
-    );
-};
-
-const styles: { [key: string]: React.CSSProperties } = {
-    container: {
-        padding: '20px',
-        fontFamily: 'Arial, sans-serif',
-    },
-    grid: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-        gap: '20px',
-    },
-    card: {
-        border: '1px solid #ccc',
-        borderRadius: '8px',
-        padding: '16px',
-        textAlign: 'center',
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-    },
-    image: {
-        width: '100%',
-        height: '150px',
-        objectFit: 'cover',
-        borderRadius: '8px 8px 0 0',
-    },
-};
-
-export default Catalogo;
+export default Rooms;

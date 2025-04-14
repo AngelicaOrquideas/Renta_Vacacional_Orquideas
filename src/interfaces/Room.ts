@@ -10,10 +10,13 @@ export interface Room {
     images: string[];
     description: string;
     features: {
+      pool: unknown;
       guests: number;
       wifi: number;
       airConditioning: number;
       beds: number;
+      bedrooms?: number;
+      bathrooms?: number;
       petFriendly: number;
     };
   }
