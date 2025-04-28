@@ -2,27 +2,74 @@
   "rooms": [
     {
       "id": 1,
-      "title": "Estudio céntrico cerca de la plaza",
-      "pricePerNight": 750,
-      "pricePerWeek": 4500,
-      "pricePerMonth": 16000,
-      "location": "Zona Hotelera, Cancún",
-      "lat": 21.1606,
-      "lng": -86.8475,
+      "title": "California Habitación 101",
+      "pricePerNight": 1000,
+      "pricePerWeek": 5600,
+      "pricePerMonth": 21000,
+      "location": "California, Cancún - Quintana Roo",
+      "lat": 21.145283,
+      "lng": -86.845345,
       "images": [
-        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg"
+        "https://live.staticflickr.com/65535/54475877739_d93bc31366_z.jpg",
+        "https://live.staticflickr.com/65535/54471944695_1ecda7a761_n.jpg",
+        "https://live.staticflickr.com/65535/54471854218_6d9bd0224e_n.jpg",
+        "https://live.staticflickr.com/65535/54470746842_717c03c5d6_n.jpg",
+        "https://live.staticflickr.com/65535/54471582896_1d269d7876_n.jpg",
+        "https://live.staticflickr.com/65535/54471787899_3d84ab9479_n.jpg",
+        "https://live.staticflickr.com/65535/54471582921_d9b7baea9b_n.jpg",
+        "https://live.staticflickr.com/65535/54471944710_d0d4e0d514_n.jpg",
+        "https://live.staticflickr.com/65535/54471787919_22d8950cb4_n.jpg",
+        "https://live.staticflickr.com/65535/54471788144_4eef8fa692_n.jpg",
+        "https://live.staticflickr.com/65535/54470746622_e9a693a6ce_n.jpg"
       ],
-      "description": "Estudio moderno con acceso a la playa, ideal para 2 personas.",
+      "description": "Estudio moderno con acceso a la alberca, ideal para 2 o mas personas.",
       "features": {
         "wifi": true,
         "airConditioning": true,
-        "beds": 1,
-        "bedrooms": 1,
-        "bathrooms": 1,
-        "guests": 2,
-        "petFriendly": false,
-        "pool": false
+        "beds": 3,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "guests": 5,
+        "petFriendly": true,
+        "pool": false,
+        "hotTub": false,
+        "fireplace": false,
+        "gameRoom": false,
+        "kitchen": true,
+        "parking": true,
+        "tv": true,
+        "ceilingFan": true,
+        "ironAndBoard": true,
+        "safeBox": true,
+        "fullLengthMirror": true,
+        "microwave": true,
+        "coffeeMaker": true,
+        "washer": true,
+        "hairDryer": true,
+        "extraTowels": true,
+        "blender": true,
+        "toaster": true,
+        "oven": true,
+        "dishesAndCutlery": true,
+        "cookingUtensils": true,
+        "balconyOrTerrace": true,
+        "privateGarden": true,
+        "barbecueGrill": true,
+        "outdoorTableAndChairs": true
+      },
+      "arrivalExperience": {
+        "intro": "Esta habitación ha sido cuidadosamente equipada para ofrecerte una experiencia cómoda y placentera. Ideal para viajes en pareja, familiares o de descanso, cada detalle está pensado para que solo te preocupes por disfrutar.",
+        "highlights": [
+          { "icon": "PiBedBold", "text": "Camas amplias y cómodas con sábanas limpias para un descanso reparador." },
+          { "icon": "PiShowerBold", "text": "Baño privado con agua caliente y toallas limpias." },
+          { "icon": "PiTelevisionBold", "text": "Zona de descanso con TV, perfecta para relajarte después de un día de exploración." },
+          { "icon": "PiWifiHighBold", "text": "Conexión Wi-Fi gratuita para mantenerte conectado." },
+          { "icon": "PiCookingPotBold", "text": "Cocina equipada con microondas, cafetera y utensilios básicos." },
+          { "icon": "PiCarBold", "text": "Estacionamiento gratuito y seguro para tu comodidad." },
+          { "icon": "PiSwimmingPoolBold", "text": "Acceso a la alberca del complejo para refrescarte." }
+        ]
       }
+
     },
     {
       "id": 2,
@@ -34,7 +81,14 @@
       "lat": 20.6296,
       "lng": -87.0739,
       "images": [
-        "https://www.estiloydeco.com/wp-content/uploads/2020/04/colores-calidos-7.jpg"
+        "https://www.estiloydeco.com/wp-content/uploads/2020/04/colores-calidos-7.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg"
       ],
       "description": "Amplio apartamento con cocina y balcón con vista al mar.",
       "features": {
@@ -45,7 +99,13 @@
         "bathrooms": 2,
         "guests": 5,
         "petFriendly": true,
-        "pool": false
+        "pool": false,
+        "hotTub": false,
+        "fireplace": false,
+        "gameRoom": false,
+        "kitchen": true,
+        "parking": true,
+        "tv": true
       }
     },
     {
@@ -58,7 +118,14 @@
       "lat": 20.2111,
       "lng": -87.4659,
       "images": [
-        "https://i.pinimg.com/736x/e1/4d/8c/e14d8cefedd36aeaa2524624c8a3bf76.jpg"
+        "https://i.pinimg.com/736x/e1/4d/8c/e14d8cefedd36aeaa2524624c8a3bf76.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg"
       ],
       "description": "Cabaña acogedora rodeada de naturaleza, ideal para desconectar.",
       "features": {
@@ -69,7 +136,13 @@
         "bathrooms": 1,
         "guests": 4,
         "petFriendly": true,
-        "pool": false
+        "pool": false,
+        "hotTub": false,
+        "fireplace": true,
+        "gameRoom": false,
+        "kitchen": true,
+        "parking": true,
+        "tv": false
       }
     },
     {
@@ -82,7 +155,14 @@
       "lat": 19.4326,
       "lng": -99.1332,
       "images": [
-        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg?im_w=720"
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg?im_w=720",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg"
       ],
       "description": "Loft elegante con cocina equipada y balcón.",
       "features": {
@@ -93,7 +173,13 @@
         "bathrooms": 1,
         "guests": 2,
         "petFriendly": false,
-        "pool": false
+        "pool": false,
+        "hotTub": false,
+        "fireplace": false,
+        "gameRoom": false,
+        "kitchen": true,
+        "parking": true,
+        "tv": true
       }
     },
     {
@@ -106,7 +192,14 @@
       "lat": 20.6534,
       "lng": -105.2259,
       "images": [
-        "https://a0.muscache.com/im/pictures/c22305dd-1648-4f8a-a40f-69c32e1c16bb.jpg?im_w=720"
+        "https://a0.muscache.com/im/pictures/c22305dd-1648-4f8a-a40f-69c32e1c16bb.jpg?im_w=720",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg"
       ],
       "description": "Casa espaciosa con piscina privada y acceso a la playa.",
       "features": {
@@ -117,10 +210,15 @@
         "bathrooms": 3,
         "guests": 8,
         "petFriendly": true,
-        "pool": true
+        "pool": true,
+        "hotTub": true,
+        "fireplace": false,
+        "gameRoom": true,
+        "kitchen": true,
+        "parking": true,
+        "tv": true
       }
     },
-    
     {
       "id": 6,
       "title": "Cabaña en la montaña",
@@ -131,6 +229,13 @@
       "lat": 19.1932,
       "lng": -100.1131,
       "images": [
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg",
+        "https://interiordesignspr.wordpress.com/wp-content/uploads/2012/11/cal.jpg",
+        "https://a0.muscache.com/im/pictures/f4f76258-40bf-4f18-b338-ca8354ac8fc7.jpg",
         "https://hips.hearstapps.com/hmg-prod/images/caban-a-disen-o-actual-1535369712.jpg"
       ],
       "description": "Cabaña acogedora con chimenea y vistas a la montaña.",
@@ -142,7 +247,13 @@
         "bathrooms": 1,
         "guests": 4,
         "petFriendly": true,
-        "pool": false
+        "pool": false,
+        "hotTub": true,
+        "fireplace": true,
+        "gameRoom": false,
+        "kitchen": true,
+        "parking": false,
+        "tv": true
       }
     },
     {
@@ -155,18 +266,25 @@
       "lat": 16.8531,
       "lng": -99.8237,
       "images": [
-      "https://static8.depositphotos.com/1009647/905/i/450/depositphotos_9052158-stock-photo-empty-room.jpg"
+        "https://static8.depositphotos.com/1009647/905/i/450/depositphotos_9052158-stock-photo-empty-room.jpg",
+        "https://static8.depositphotos.com/1009647/905/i/450/depositphotos_9052158-stock-photo-empty-room.jpg"
       ],
       "description": "Apartamento vacio.",
       "features": {
-      "wifi": false,
-      "airConditioning": false,
-      "beds": 0,
-      "guests": 0,
-      "bedrooms": 0,
+        "wifi": false,
+        "airConditioning": false,
+        "beds": 0,
+        "guests": 0,
+        "bedrooms": 0,
         "bathrooms": 0,
-      "petFriendly": false,
-      "pool": false
+        "petFriendly": false,
+        "pool": false,
+        "hotTub": false,
+        "fireplace": false,
+        "gameRoom": false,
+        "kitchen": false,
+        "parking": false,
+        "tv": false
       }
     }
   ]

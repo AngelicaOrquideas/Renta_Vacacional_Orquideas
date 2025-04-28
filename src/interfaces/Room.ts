@@ -1,4 +1,6 @@
 export interface Room {
+    videoUrl: any;
+    arrivalExperience: any;
     id: number;
     title: string;
     pricePerNight: number;
@@ -10,6 +12,12 @@ export interface Room {
     images: string[];
     description: string;
     features: {
+      hotTub: any;
+      fireplace: any;
+      gameRoom: any;
+      kitchen: any;
+      parking: any;
+      tv: any;
       pool: unknown;
       guests: number;
       wifi: number;

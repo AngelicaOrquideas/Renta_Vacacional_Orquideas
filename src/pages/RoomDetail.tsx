@@ -1,9 +1,48 @@
+import { PiUsers, PiBathtub, PiDoor, PiHairDryerBold, PiOvenDuotone } from "react-icons/pi"; // opcional para íconos más suaves
+import {FaWifi, FaSnowflake, FaSwimmingPool, FaDog, FaTv, FaCar, FaUtensils, FaGamepad, FaFire,FaHotTub,FaBlender,} from "react-icons/fa";
+import { RiSafe2Fill, RiArmchairLine } from "react-icons/ri";
+import { LuLampCeiling, LuUtensils, LuMicrowave } from "react-icons/lu";
+import { GiMirrorMirror, GiWashingMachine, GiToaster, GiHighGrass } from "react-icons/gi";
+import { MdCoffeeMaker, MdBalcony, MdOutlineOutdoorGrill, MdLocalLaundryService } from "react-icons/md";
+import { FaKitchenSet } from "react-icons/fa6";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Room } from "../../src/interfaces/Room";
 import { getPopularRooms } from "../../src/services/roomService";
-import { PiUsers, PiBathtub, PiDoor } from "react-icons/pi"; // opcional para íconos más suaves
-import { FaCheck,} from "react-icons/fa";
+import RoomGallery from "../components/room/GallerySection";
+import * as PiIcons from "react-icons/pi";
+
+
+const amenitiesList = [
+  { key: "wifi", label: "Wifi", icon: FaWifi },
+  { key: "airConditioning", label: "Aire Acondicionado", icon: FaSnowflake },
+  { key: "pool", label: "Alberca", icon: FaSwimmingPool },
+  { key: "petFriendly", label: "Pet Friendly", icon: FaDog },
+  { key: "tv", label: "TV", icon: FaTv },
+  { key: "parking", label: "Estacionamiento", icon: FaCar },
+  { key: "kitchen", label: "Cocina", icon: FaUtensils },
+  { key: "gameRoom", label: "Sala de Juegos", icon: FaGamepad },
+  { key: "fireplace", label: "Chimenea", icon: FaFire },
+  { key: "hotTub", label: "Tina de Hidromasaje", icon: FaHotTub },
+  { key: "ceilingFan", label: "Ventilador de Techo", icon: LuLampCeiling },
+  { key: "safeBox", label: "Caja Fuerte", icon: RiSafe2Fill   },
+  { key: "fullLengthMirror", label: "Espejo de cuerpo completo", icon: GiMirrorMirror },
+  { key: "microwave", label: "Microondas", icon: LuMicrowave },
+  { key: "coffeeMaker", label: "Cafetera", icon: MdCoffeeMaker },
+  { key: "washer", label: "Lavadora", icon: GiWashingMachine },
+  { key: "hairDryer", label: "Secadora de Cabello", icon: PiHairDryerBold },
+  { key: "extraTowels", label: "Toallas Adicionales", icon: MdLocalLaundryService },
+  { key: "blender", label: "Licuadora", icon: FaBlender },
+  { key: "toaster", label: "Tostadora", icon: GiToaster },
+  { key: "oven", label: "Horno", icon: PiOvenDuotone },
+  { key: "dishesAndCutlery", label: "Vajilla Completa", icon: FaKitchenSet },
+  { key: "cookingUtensils", label: "Utensilios de Cocina", icon: LuUtensils },
+  { key: "balconyOrTerrace", label: "Terraza / Balcón", icon: MdBalcony },
+  { key: "privateGarden", label: "Jardín Privado", icon: GiHighGrass },
+  { key: "barbecueGrill", label: "Parrilla / Asador", icon: MdOutlineOutdoorGrill },
+  { key: "outdoorTableAndChairs", label: "Mesa y sillas exteriores", icon: RiArmchairLine }
+];
+
 
 const RoomDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -82,56 +121,80 @@ const RoomDetail = () => {
 
         <hr className="my-10 border-t-2 border-gray-300" />
 
-        {/* Descripción */}
-        <h3 className="text-xl font-bold mb-">Sobre la habitación</h3>
-        <p className="text-gray-700 leading-relaxed mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Cras tellus sit amet tempor amet, nascetur quam ornare proin.
-        </p>
-        <ul className="list-disc list-inside text-gray-600 space-y-2 mb-8">
-          <li>Faucibus pulvinar elementum integer enim neque.</li>
-          <li>Magna etiam tempor orci eu lobortis elementum nibh.</li>
-          <li>Porta lorem mollis aliquam ut porttitor leo a diam.</li>
-          <li>Pellentesque elit eget gravida cum sociis natoque penatibus.</li>
-        </ul>
+        {/* Sección: Lo que te espera al llegar */}
+        {room.arrivalExperience && (
+          <div className="bg-gray-50 rounded-2xl p-8 mb-16 shadow-inner">
+            <h3 className="text-2xl font-bold mb-6 text-gray-800 flex items-center gap-2">
+              🏠 Lo que te espera al llegar
+            </h3>
+
+            <p className="text-gray-700 text-base leading-relaxed mb-10 max-w-3xl">
+              {room.arrivalExperience.intro}
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
+              {room.arrivalExperience.highlights.map(
+                (highlight: { icon: string; text: string }, index: number) => {
+                  const IconComponent = PiIcons[highlight.icon as keyof typeof PiIcons];
+
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-start gap-4 p-4 bg-white border border-gray-200 rounded-xl shadow-sm"
+                    >
+                      {IconComponent ? (
+                        <IconComponent className="text-2xl text-red-500 mt-1" />
+                      ) : (
+                        <span className="text-2xl text-red-500 mt-1">✨</span>
+                      )}
+                      <span>{highlight.text}</span>
+                    </div>
+                  );
+                }
+              )}
+            </div>
+          </div>
+        )}
 
         <hr className="my-10 border-t-2 border-gray-300" />
 
-
         {/* Amenidades */}
-        <h3 className="text-xl font-bold mb-4">Room amenities</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-600 mb-8">
-          {[
-            features.wifi && "Wifi",
-            features.airConditioning && "Aire Acondicionado",
-            features.pool && "Alberca",
-            features.petFriendly && "Pet Friendly",
-          ]
-            .filter(Boolean)
-            .map((item, i) => (
-              <span key={i} className="flex items-center gap-2">
-                <FaCheck className="text-green-500" /> {item as string}
-              </span>
-            ))}
-        </div>
+          <h3 className="text-2xl font-bold mb-6 text-gray-800">Amenidades que ofrecemos</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-gray-700">
+            {amenitiesList.map(({ key, label, icon: Icon }) =>
+              features[key as keyof typeof features] ? (
+                <div
+                  key={key}
+                  className="flex flex-col items-center justify-center text-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-200"
+                >
+                  <Icon className="text-2xl mb-2 text-red-500" />
+                  <span className="text-sm font-medium">{label}</span>
+                </div>
+              ) : null
+            )}
+          </div>
 
         <hr className="border-gray-300  border-t-2 my-10" />
 
-        {/* Galería */}
-        <h3 className="text-xl font-bold mb-4">Room gallery</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {images.map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt={`Galería ${i + 1}`}
-              className="rounded-xl h-32 object-cover w-full"
-            />
-          ))}
-        </div>
+          <RoomGallery images={images.slice(1)} />
+          
+          <div className="mt-10 mb-20">
+            <h3 className="text-xl font-bold mb-6 border-b border-gray-300 pb-2">Ubicación</h3>
+            <div className="aspect-[21/9] w-full rounded-xl overflow-hidden shadow-sm">
+              <iframe
+                src={`https://maps.google.com/maps?q=${room.lat},${room.lng}&hl=es;z=14&output=embed`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
       </div>
 
       {/*CARD INDIVIDUAL*/}      
-      <div className="relative md:absolute md:right-20 md:bottom-[-60px] mx-auto md:mx-0 bg-white p-6 rounded-xl shadow-2xl ring-1 ring-black/5 w-full max-w-sm z-10 transition-transform hover:scale-[1.02] mt-10 md:mt-0 mb-16 md:mb-0">
+      <div className="relative md:absolute md:right-20 md:bottom-[-60px] mx-auto md:mx-0 bg-white p-6 rounded-xl shadow-2xl ring-1 ring-black/5 w-full max-w-sm z-10 transition-transform hover:scale-[1.02] mt-6 md:mt-0 mb-10 md:mb-0">
 
             <h4 className="text-xl font-bold mb-1">Reserva tu estadía</h4>
             <p className="text-sm text-gray-500 mb-4">Selecciona el tipo de precio para calcular el total:</p>
@@ -184,10 +247,16 @@ const RoomDetail = () => {
             <p><span className="font-medium">Aire acondicionado:</span> {features.airConditioning ? "Sí" : "No"}</p>
             <p><span className="font-medium">Capacidad:</span> {features.guests} huéspedes</p>  
             </div>
-
-            <button className="w-full bg-red-500 text-white py-3 rounded-full hover:bg-red-600 transition font-medium text-base">
-            Reservar ahora
-            </button>
+            <a
+              href={`https://wa.me/4421323281?text=${encodeURIComponent(
+                `Hola, quiero reservar la habitación "${title}" por ${renderPrice()}`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full inline-block bg-red-500 text-white text-center py-3 rounded-full hover:bg-red-600 transition font-medium text-base"
+            >
+              Reservar ahora
+            </a>
         </div>  
     </>
   );

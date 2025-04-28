@@ -8,7 +8,7 @@ const Rooms = () => {
       <section
         className="relative min-h-[90vh] flex items-center justify-center text-white bg-center bg-cover bg-fixed"
         style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0,0,0,0.2)), url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/b7/96/ee/hard-rock-hotel-cancun.jpg?w=700&h=-1&s=1')`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0,0,0,0.2)), url('https://live.staticflickr.com/65535/54471787919_22d8950cb4_n.jpg')`,
         }}
       >
         <div className="text-center px-6 z-10">

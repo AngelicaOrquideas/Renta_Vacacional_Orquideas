@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../../assets/Logo2.png";
+import logo from "../../assets/logo5.png";
 import { IoBedOutline } from "react-icons/io5";
 
 const Navbar = () => {
@@ -22,17 +22,25 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar escritorio con óvalo */}
-      <header className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-[90%] md:max-w-5xl transition-all duration-500 ease-in-out ${
-        scrolled ? "bg-white shadow-md py-2" : "bg-white shadow-md py-3"
-      } rounded-full px-6`}>
+        <header className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-[90%] md:max-w-5xl transition-all duration-500 ease-in-out ${
+          scrolled ? "bg-white shadow-md py-1.5" : "bg-white shadow-md py-2"
+        } rounded-full px-4`}>
         <div className="flex items-center justify-between w-full">
           {/* Logo + nombre */}
-          <div className="flex items-center gap-2">
-            <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
-            <span className="font-semibold text-gray-800 text-sm md:text-base">
-              Renta Vacacional Orquídea
-            </span>
+          <div className="flex items-center gap-3">
+          <div className="h-14 w-14 md:h-16 md:w-16 rounded-full overflow-hidden">
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
+          <span className="font-semibold text-gray-800 text-base md:text-lg leading-tight">
+            Renta Vacacional <br className="hidden md:block" />
+            <span>Orquídea</span>
+          </span>
+        </div>
+
 
           {/* Navegación desktop */}
           <ul className="hidden md:flex space-x-6 text-sm md:text-lg font-medium text-gray-700">
@@ -157,12 +165,15 @@ const Navbar = () => {
             Contáctanos</Link>
           </li>
           <li>
-          <Link to="/rooms">
-            <button onClick={closeMenu} className="group bg-red-500 text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2 shadow-md hover:bg-red-600 hover:shadow-lg transition duration-300 cursor-pointer">
-              <span className="group-hover:scale-110 transition-transform duration-300"><IoBedOutline className="text-xl" /></span>
+          <Link
+              to="/rooms"
+              onClick={closeMenu}
+              className={`transition-all ${
+                location.pathname === "/rooms" ? "text-red-500 font-bold" : "hover:text-red-400"
+              }`}
+            >
               Habitaciones
-            </button>
-          </Link>
+            </Link>
           </li>
         </ul>
       </aside>

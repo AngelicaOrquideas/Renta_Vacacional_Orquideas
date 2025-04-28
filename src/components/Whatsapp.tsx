@@ -1,7 +1,7 @@
 {/* Sección: de whatsapp */}      
 const Whatsapp = () => (
   <a
-    href="//wa.me/5219982210316"
+    href="https://wa.me/4421323281?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20de%20sus%20cuartos"
     target="_blank"
     rel="noopener noreferrer"
     className="fixed bottom-6 right-6 z-50"

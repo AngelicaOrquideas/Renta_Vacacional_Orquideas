@@ -3,11 +3,11 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const locations = [
   {
-    name: "Apartamento Orquídea 1",
-    address: "Zona centro - Cancún, Quintana Roo",
-    image: "https://imganuncios.mitula.net/quillota_chacabuco_960_2970002736000764554.jpg",
-    link: "https://maps.app.goo.gl/REUZiNLxqzftrBnr9",
-  },
+    name: "California Habitación 101",
+    address: "California, Cancún - Quintana Roo",
+    image: "https://live.staticflickr.com/65535/54475877739_d93bc31366_z.jpg", // imagen principal o nueva hero
+    link: "https://maps.app.goo.gl/bAab8xoNzjg91iYd9"
+  },  
   {
     name: "Jardines del Sur",
     address: "Zona hotelera - Cancún, Quintana Roo",
