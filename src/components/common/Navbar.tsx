@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../../assets/logo5.png";
+import logo from "../../assets/logo.png";
 import { IoBedOutline } from "react-icons/io5";
 
 const Navbar = () => {
