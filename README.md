@@ -33,56 +33,72 @@ src/
 ├── services/                # Lógica para traer habitaciones
 ├── App.tsx                  # Composición principal
 ├── main.tsx                 # Entrada del proyecto
-🛠️ Instalación y ejecución
-1. Clona el repositorio
-bash
-Copiar
-Editar
-git clone https://github.com/tu-usuario/renta-vacacional-orquidea.git
-cd renta-vacacional-orquidea
-2. Instala dependencias
-bash
-Copiar
-Editar
-npm install
-3. Inicia el servidor de desarrollo
-bash
-Copiar
-Editar
-npm run dev
-Abre tu navegador en http://localhost:5173
+```
 
-🧼 Scripts útiles
-bash
-Copiar
-Editar
+---
+
+## 🛠️ Instalación y ejecución
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/Carlos-Alejandro/Renta-Vacacional-Orqu-deas.git
+cd Renta-Vacacional-Orqu-deas
+```
+
+### 2. Instala dependencias
+
+```bash
+npm install
+```
+
+### 3. Inicia el servidor de desarrollo
+
+```bash
+npm run dev
+```
+
+Abre tu navegador en [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🧼 Scripts útiles
+
+```bash
 npm run dev       # Inicia el servidor local
 npm run build     # Genera versión optimizada para producción
 npm run preview   # Previsualiza la versión de producción
 npm run lint      # (si tienes ESLint activado)
-✨ Funcionalidades destacadas
-Hero animado y diseño moderno
+```
 
-Carrusel de ubicaciones
+---
 
-Vista detallada por habitación
+## ✨ Funcionalidades destacadas
 
-Filtro dinámico por amenidades
+- Hero animado y diseño moderno
+- Carrusel de ubicaciones
+- Vista detallada por habitación
+- Filtro dinámico por amenidades
+- Modo responsive para móviles
+- Acceso directo a WhatsApp
 
-Modo responsive para móviles
+---
 
-Acceso directo a WhatsApp
+## 📌 Notas técnicas
 
-📌 Notas técnicas
-Las rutas están cargadas de forma perezosa (lazy loading) para mejorar el rendimiento.
+- Las rutas están **cargadas de forma perezosa (lazy loading)** para mejorar el rendimiento.
+- Se usa `Suspense` con un spinner visual de Tailwind como `fallback`.
+- Los datos de habitaciones provienen de `rooms.json`, simulando una API real.
 
-Se usa Suspense con un spinner visual de Tailwind como fallback.
+---
 
-Los datos de habitaciones provienen de rooms.json, simulando una API real.
+## 📷 Captura de ejemplo
 
-📷 Captura de ejemplo
+![Demo](https://live.staticflickr.com/65535/54475877739_d93bc31366_b.jpg)
 
+---
 
-📄 Licencia
-Este proyecto está desarrollado con fines demostrativos y educativos.
+## 📄 Licencia
+
+Este proyecto está desarrollado con fines demostrativos y educativos.  
 © 2025 — Renta Vacacional Orquídea
