@@ -2,12 +2,12 @@
 import { FaFacebookF, FaXTwitter, FaYoutube, FaInstagram } from "react-icons/fa6";
 
 const instagramImages = [
-  "https://i.pinimg.com/736x/87/c5/4c/87c54c05e4cef792e0090314bdcb2fad.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNrD1VrdmP3NPUiAWT1TQB9VBHJLJ_ZX88B37O9PQhMT1ubXW3ovUM5IjWewQZakCTb4&usqp=CAU",
-  "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
-  "https://i.pinimg.com/736x/f8/75/f0/f875f02c682e48700db48c6a42fbe0bf.jpg",
-  "https://i.pinimg.com/736x/72/8f/3e/728f3eea9f234ef04a0674e3abfb2fd9.jpg",
-  "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+  "https://live.staticflickr.com/65535/54475877739_d93bc31366_w.jpg",
+  "https://live.staticflickr.com/65535/54470746842_717c03c5d6_n.jpg",
+  "https://live.staticflickr.com/65535/54471854218_6d9bd0224e_n.jpg",
+  "https://live.staticflickr.com/65535/54471582896_1d269d7876_n.jpg",
+  "https://live.staticflickr.com/65535/54471787919_22d8950cb4_n.jpg",
+  "https://live.staticflickr.com/65535/54470746622_e9a693a6ce_n.jpg"
 ];
 
 const Footer = () => {

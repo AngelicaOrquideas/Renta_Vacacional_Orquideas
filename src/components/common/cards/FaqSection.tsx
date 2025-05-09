@@ -17,12 +17,12 @@ const faqData = [
   },
   {
     question: "¿Cómo sé si mi reservación fue confirmada?",
-    answer: "Recibirás un correo o mensaje de confirmación con los detalles de tu estancia.",
+    answer: "Recibirás una llamada o WhatsApp de confirmación con los detalles de tu estancia.",
   },
   {
     question: "¿Qué pasa si deseo cancelar mi reserva?",
     answer:
-      "Puedes cancelarla sin cargo hasta 48 horas antes del check-in. Después de ese periodo se aplican cargos.",
+      "Puedes cancelarla sin cargo hasta 24 horas antes del check-in. Después de ese periodo se aplican cargos.",
   },
 ];
 

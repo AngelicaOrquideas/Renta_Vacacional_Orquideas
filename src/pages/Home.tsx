@@ -29,49 +29,54 @@ const Home: React.FC = () => {
     <>
       {/* Hero */}
       <div
-        className="relative min-h-screen flex items-center justify-center text-white bg-center bg-cover"
+        className="relative min-h-screen flex items-center justify-center text-white bg-cover bg-no-repeat bg-center sm:bg-[center_top]"
         style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.1)), url('src/assets/Fondo.jpg')`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.1)), url('https://live.staticflickr.com/65535/54506509740_1e7f9fdd3d_b.jpg')`,
         }}
       >
-        <div className="text-center px-6 z-10">
-        <div className="animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
-            <Typewriter
-              words={[
-                "Descansa en espacios pensados para ti",
-                "Vive la experiencia de un descanso verdadero",
-                "Tu alojamiento ideal te espera aquí"
-              ]}
-              loop={true}
-              cursor
-              cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={2000}
-            />
-          </h1>
-        </div>
-          <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto text-white/80">
-          Vive unas vacaciones inolvidables en Cancún. Hospédate en lugares acogedores, bien ubicados y con todas las comodidades incluidas.
-          </p>
-          <div className="mt-8 flex gap-4 justify-center">
-          <Link to="/rooms">
-            <button className="group bg-red-500 text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2 shadow-md hover:bg-red-600 hover:shadow-lg transition duration-300 cursor-pointer">
-              <span className="group-hover:scale-110 transition-transform duration-300"><FaSearch className="text-xl" /></span>
-              Explorar Habitaciones
-            </button>
-          </Link>
-          <Link to="/about">
-            <button className="group bg-white text-gray-900 px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-100 hover:shadow-md transition duration-300 cursor-pointer">
-              <MdInfoOutline className="text-2xl text-red-500 group-hover:text-red-600 transition-colors" />
-              Sobre nosotros
-            </button>
-          </Link>
+        <div className="absolute inset-0 bg-black/50 z-0" />
 
+        <div className="text-center px-4 sm:px-6 z-10 w-full max-w-[90%] py-10 sm:py-20">
+          <div className="animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white text-center leading-tight drop-shadow-md">
+              <Typewriter
+                words={[
+                  "Descansa en espacios pensados para ti",
+                  "Vive la experiencia de un descanso verdadero",
+                  "Tu alojamiento ideal te espera aquí"
+                ]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}
+              />
+            </h1>
+          </div>
+
+          <p className="text-base sm:text-lg md:text-xl mt-4 max-w-2xl mx-auto text-white/80 drop-shadow">
+            Vive unas vacaciones inolvidables en Cancún. Hospédate en lugares acogedores, bien ubicados y con todas las comodidades incluidas.
+          </p>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/rooms">
+              <button className="group bg-red-500 text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2 shadow-md hover:bg-red-600 hover:shadow-lg transition duration-300">
+                <FaSearch className="text-xl group-hover:scale-110 transition-transform duration-300" />
+                Explorar Habitaciones
+              </button>
+            </Link>
+
+            <Link to="/about">
+              <button className="group bg-white text-gray-900 px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-100 hover:shadow-md transition duration-300">
+                <MdInfoOutline className="text-2xl text-red-500 group-hover:text-red-600 transition-colors" />
+                Sobre nosotros
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+
 
       {/* Sección: Explora nuestros cuartos más rentados */}
       <section className="bg-white py-16 px-4 md:px-8">
@@ -110,7 +115,7 @@ const Home: React.FC = () => {
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
                 {/* Aquí va tu ícono personalizado (SVG o imagen) */}
-                <img src="src/assets/Aire-Acondicionado.png" alt="aire" className="w-full h-full object-cover" />
+                <img src="https://live.staticflickr.com/65535/54506157366_8f63506e88_w.jpg" alt="aire" className="w-full h-full object-cover" />
 
               </div>
               <div>
@@ -122,7 +127,7 @@ const Home: React.FC = () => {
             {/* 2 */}
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
-                <img src="src/assets/Alberca.png" alt="alberca" className="w-full h-full object-cover" />
+                <img src="https://live.staticflickr.com/65535/54506157371_3dafe1f683_w.jpg" alt="alberca" className="w-full h-full object-cover" />
 
               </div>
               <div>
@@ -134,7 +139,7 @@ const Home: React.FC = () => {
             {/* 3 */}
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
-                <img src="src/assets/Wi-fi.png" alt="wifi" className="w-full h-full object-cover" />
+                <img src="https://live.staticflickr.com/65535/54505292407_d418f99a5b_n.jpg" alt="wifi" className="w-full h-full object-cover" />
 
               </div>
               <div>
@@ -146,7 +151,7 @@ const Home: React.FC = () => {
             {/* 4 */}
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
-                <img src="src/assets/Lugar-Centrico.png" alt="lugares céntricos" className="w-full h-full object-cover" />
+                <img src="https://live.staticflickr.com/65535/54505292417_0996c19924_n.jpg" alt="lugares céntricos" className="w-full h-full object-cover" />
 
               </div>
               <div>
@@ -158,7 +163,7 @@ const Home: React.FC = () => {
             {/* 5 */}
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
-              <img src="src\assets\Toallas.png" alt="toallas" className="w-full h-full object-cover" />
+              <img src="https://live.staticflickr.com/65535/54506509670_5b7bb09931_n.jpg" alt="toallas" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h4 className="font-semibold text-gray-800">Toallas</h4>
@@ -169,7 +174,7 @@ const Home: React.FC = () => {
             {/* 6 */}
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
-              <img src="src/assets/Cama.png" alt="camas" className="w-full h-full object-cover" />
+              <img src="https://live.staticflickr.com/65535/54506509930_175a256a53_w.jpg" alt="camas" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h4 className="font-semibold text-gray-800">Camas</h4>
@@ -199,20 +204,22 @@ const Home: React.FC = () => {
           {/* Galería de imágenes estilo collage */}
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://content.elmueble.com/medio/2018/10/03/79c5e3c888768578f9cfe23acf6c9e4a_ab039daf_564x943.jpg"
-              alt="Cabaña exterior"
+              src="https://live.staticflickr.com/65535/54505292232_3b6399cbc0_n.jpg"
+              alt="Renta Vacacional Orquídea"
+
               className="rounded-xl w-full h-auto object-cover row-span-2"
             />
             <img
-              src="https://media1.amarilo.com.co/website/s3fs-public/blog/2023-03/Colores-fr%C3%ADos-y-c%C3%A1lidos.jpeg"
-              alt="Interior acogedor"
+              src="https://live.staticflickr.com/65535/54505292262_606c25566c_w.jpg"
+              alt="Renta Vacacional Orquídea"
               className="rounded-xl w-full h-full object-cover"
             />
             <img
-              src="https://img.interempresas.net/fotos/3424865.jpeg"
-              alt="Comedor"
+              src="https://live.staticflickr.com/65535/54506509740_1e7f9fdd3d.jpg"
+              alt="Renta Vacacional Orquídea"
               className="rounded-xl w-full h-full object-cover"
             />
+            
           </div>
 
           {/* Texto descriptivo + botón de reserva */}

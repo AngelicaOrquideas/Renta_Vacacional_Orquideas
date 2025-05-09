@@ -182,15 +182,17 @@ const RoomDetail = () => {
             <h3 className="text-xl font-bold mb-6 border-b border-gray-300 pb-2">Ubicación</h3>
             <div className="aspect-[21/9] w-full rounded-xl overflow-hidden shadow-sm">
               <iframe
-                src={`https://maps.google.com/maps?q=${room.lat},${room.lng}&hl=es;z=14&output=embed`}
+                src={room.mapStreetViewUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen={false}
+                allowFullScreen
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
+
       </div>
 
       {/*CARD INDIVIDUAL*/}      

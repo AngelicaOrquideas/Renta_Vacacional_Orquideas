@@ -10,16 +10,21 @@ const Contact = () => {
       <section
         className="relative min-h-[90vh] flex items-center justify-center text-white bg-center bg-cover bg-fixed"
         style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0,0,0,0.2)), url('https://www.hilton.com/im/en/PHXTYPY/17094374/5d4-0975-6-7.jpg?impolicy=crop&cw=3750&ch=2812&gravity=NorthWest&xposition=625&yposition=0&rw=1200&rh=900')`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
         }}
       >
-        <div className="text-center px-6 z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">Contáctanos</h1>
-          <p className="max-w-xl mx-auto text-white/80">
-            Comunícate con nosotros a través de nuestras redes sociales o vía telefónica. ¡Estamos para ayudarte!
+        <div className="absolute inset-0 bg-black/40 z-0" />
+        <div className="text-center px-6 z-10 max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight drop-shadow">
+            Contáctanos
+          </h1>
+          <p className="text-white/90 text-base md:text-lg drop-shadow">
+            ¿Tienes alguna duda, solicitud o sugerencia? <br />
+            Comunícate con nosotros por WhatsApp, redes sociales o llamada telefónica.
           </p>
         </div>
       </section>
+
 
       {/* CONTACTO DIRECTO */}
       <section className="bg-[#FFF8E7] py-20 px-6 md:px-12">

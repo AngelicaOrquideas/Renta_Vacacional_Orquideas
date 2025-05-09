@@ -1,5 +1,6 @@
 export interface Room {
-    videoUrl: any;
+    mapStreetViewUrl: string | undefined;
+    mapUrl: string | undefined;
     arrivalExperience: any;
     id: number;
     title: string;
