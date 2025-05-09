@@ -2,7 +2,7 @@
   "rooms": [
     {
       "id": 1,
-      "title": "California Habitación 101",
+      "title": "Departamento Orquídeas Habitación 101",
       "pricePerNight": 1000,
       "pricePerWeek": 5600,
       "pricePerMonth": 21000,
@@ -138,7 +138,7 @@
     },
     {
       "id": 1,
-      "title": "California Habitación 101",
+      "title": "Departamento Orquídeas Habitación 101",
       "pricePerNight": 1000,
       "pricePerWeek": 5600,
       "pricePerMonth": 21000,

@@ -1,23 +1,24 @@
+import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Rooms from "../pages/Rooms";
-import Contact from "../pages/Contact";
-import RoomDetail from "../pages/RoomDetail";
 
-
+// Lazy load de las páginas
+const Home = lazy(() => import("../pages/Home"));
+const About = lazy(() => import("../pages/About"));
+const Contact = lazy(() => import("../pages/Contact"));
+const Rooms = lazy(() => import("../pages/Rooms"));
+const RoomDetail = lazy(() => import("../pages/RoomDetail"));
 
 const AppRoutes = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/Rooms" element={<Rooms />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/rooms/:id" element={<RoomDetail />} />
-      {/* Ruta para manejar 404 */}
-      <Route path="*" element={<div>404 Not Found</div>} />
-    </Routes>
+    <Suspense fallback={<div className="text-center mt-10 text-lg">Cargando...</div>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/rooms" element={<Rooms />} />
+        <Route path="/rooms/:id" element={<RoomDetail />} />
+      </Routes>
+    </Suspense>
   );
 };
 

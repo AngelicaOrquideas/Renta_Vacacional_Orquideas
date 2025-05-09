@@ -3,42 +3,42 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const locations = [
   {
-    name: "California Habitación 101",
-    address: "California, Cancún - Quintana Roo",
+    name: "Departamento Orquídea",
+    address: "Av. La luna, Cancún - Quintana Roo",
     image: "https://live.staticflickr.com/65535/54475877739_d93bc31366_z.jpg", // imagen principal o nueva hero
-    link: "https://maps.app.goo.gl/bAab8xoNzjg91iYd9"
+    link: "https://maps.app.goo.gl/SxqcS9HdNYZ3h5AW9"
   },  
   {
-    name: "Jardines del Sur",
-    address: "Zona hotelera - Cancún, Quintana Roo",
-    image: "https://img10.naventcdn.com/avisos/18/01/42/72/42/53/720x532/1439085673.jpg?isFirstImage=true",
-    link: "https://maps.app.goo.gl/REUZiNLxqzftrBnr9",
+    name: "Departamento Tikal",
+    address: "Av Chacmultun, - Quintana Roo",
+    image: "https://live.staticflickr.com/65535/54505576157_3b6891d727_b.jpg", // imagen principal o nueva hero
+    link: "https://maps.app.goo.gl/F9sZdQKUGXtKEtH56"
   },
+    {
+    name: "Departamento Orquídea",
+    address: "Av. La luna, Cancún - Quintana Roo",
+    image: "https://live.staticflickr.com/65535/54475877739_d93bc31366_z.jpg", // imagen principal o nueva hero
+    link: "https://maps.app.goo.gl/SxqcS9HdNYZ3h5AW9"
+  },  
   {
-    name: "Casa de El Pedregal",
-    address: "Puerto Cancún - Cancún, Quintana Roo",
-    image: "https://casa-campestre-premium-bed-breakfast.hotels-quintana-roo.com/data/Pictures/OriginalPhoto/7790/779042/779042643/picture-cancun-casa-campestre-premium-bed-breakfast-27.JPEG",
-    link: "https://maps.app.goo.gl/REUZiNLxqzftrBnr9",
+    name: "Departamento Tikal",
+    address: "Av Chacmultun, - Quintana Roo",
+    image: "https://live.staticflickr.com/65535/54505576157_3b6891d727_b.jpg", // imagen principal o nueva hero
+    link: "https://maps.app.goo.gl/F9sZdQKUGXtKEtH56"
   },
+    {
+    name: "Departamento Orquídea",
+    address: "Av. La luna, Cancún - Quintana Roo",
+    image: "https://live.staticflickr.com/65535/54475877739_d93bc31366_z.jpg", // imagen principal o nueva hero
+    link: "https://maps.app.goo.gl/SxqcS9HdNYZ3h5AW9"
+  },  
   {
-    name: "Apartamento Orquídea 1",
-    address: "Zona centro - Cancún, Quintana Roo",
-    image: "https://imganuncios.mitula.net/quillota_chacabuco_960_2970002736000764554.jpg",
-    link: "https://maps.app.goo.gl/REUZiNLxqzftrBnr9",
+    name: "Departamento Tikal",
+    address: "Av Chacmultun, - Quintana Roo",
+    image: "https://live.staticflickr.com/65535/54505576157_3b6891d727_b.jpg", // imagen principal o nueva hero
+    link: "https://maps.app.goo.gl/F9sZdQKUGXtKEtH56"
   },
-  {
-    name: "Jardines del Sur",
-    address: "Zona hotelera - Cancún, Quintana Roo",
-    image: "https://img10.naventcdn.com/avisos/18/01/42/72/42/53/720x532/1439085673.jpg?isFirstImage=true",
-    link: "https://maps.app.goo.gl/REUZiNLxqzftrBnr9",
-  },
-  {
-    name: "Casa de El Pedregal",
-    address: "Puerto Cancún - Cancún, Quintana Roo",
-    image: "https://casa-campestre-premium-bed-breakfast.hotels-quintana-roo.com/data/Pictures/OriginalPhoto/7790/779042/779042643/picture-cancun-casa-campestre-premium-bed-breakfast-27.JPEG",
-    link: "https://maps.app.goo.gl/REUZiNLxqzftrBnr9",
-  },
-  // Puedes agregar más
+  
 ];
 
 const LocationsCards = () => {
@@ -89,7 +89,7 @@ const LocationsCards = () => {
           {showLeftArrow && (
             <button
               onClick={() => scroll("left")}
-              className="hidden sm:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full shadow-md z-10"
+              className="hidden sm:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full shadow-md z-10 cursor-pointer"
             >
               <FaArrowLeft />
             </button>
@@ -98,7 +98,7 @@ const LocationsCards = () => {
           {/* Botón Derecha */}
           <button
             onClick={() => scroll("right")}
-            className="hidden sm:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full shadow-md z-10"
+            className="hidden sm:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full shadow-md z-10 cursor-pointer"
           >
             <FaArrowRight />
           </button>

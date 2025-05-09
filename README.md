@@ -1,54 +1,88 @@
-# React + TypeScript + Vite
+# 🌺 Renta Vacacional Orquídea
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web responsivo para mostrar información de alojamientos vacacionales en Cancún, Quintana Roo.  
+Construido con React + TypeScript + Tailwind CSS + Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- ⚛️ **React 19** – Componentes y navegación SPA
+- 🧠 **TypeScript** – Tipado estático y seguridad
+- 💨 **Tailwind CSS** – Utilidades de diseño modernas
+- ⚡ **Vite** – Empaquetador ultrarrápido
+- 📦 **Lazy Loading** – Carga diferida de rutas
+- 🎨 **React Icons / Lucide** – Íconos visuales
+- 🔁 **Axios** – Peticiones HTTP a servicios
+- 📱 **Responsive Design** – Adaptado a todos los dispositivos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📁 Estructura del proyecto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+src/
+├── assets/                  # Imágenes y recursos
+├── components/              # Componentes reutilizables
+│   ├── common/              # Navbar, Footer, Spinner, etc.
+│   ├── room/                # Galería y listado de cuartos
+├── data/                    # rooms.json (datos simulados)
+├── interfaces/              # Tipos TypeScript
+├── pages/                   # Vistas principales (Home, About, Contact, Rooms)
+├── routes/                  # Ruteo con React Router
+├── services/                # Lógica para traer habitaciones
+├── App.tsx                  # Composición principal
+├── main.tsx                 # Entrada del proyecto
+🛠️ Instalación y ejecución
+1. Clona el repositorio
+bash
+Copiar
+Editar
+git clone https://github.com/tu-usuario/renta-vacacional-orquidea.git
+cd renta-vacacional-orquidea
+2. Instala dependencias
+bash
+Copiar
+Editar
+npm install
+3. Inicia el servidor de desarrollo
+bash
+Copiar
+Editar
+npm run dev
+Abre tu navegador en http://localhost:5173
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🧼 Scripts útiles
+bash
+Copiar
+Editar
+npm run dev       # Inicia el servidor local
+npm run build     # Genera versión optimizada para producción
+npm run preview   # Previsualiza la versión de producción
+npm run lint      # (si tienes ESLint activado)
+✨ Funcionalidades destacadas
+Hero animado y diseño moderno
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Carrusel de ubicaciones
+
+Vista detallada por habitación
+
+Filtro dinámico por amenidades
+
+Modo responsive para móviles
+
+Acceso directo a WhatsApp
+
+📌 Notas técnicas
+Las rutas están cargadas de forma perezosa (lazy loading) para mejorar el rendimiento.
+
+Se usa Suspense con un spinner visual de Tailwind como fallback.
+
+Los datos de habitaciones provienen de rooms.json, simulando una API real.
+
+📷 Captura de ejemplo
+
+
+📄 Licencia
+Este proyecto está desarrollado con fines demostrativos y educativos.
+© 2025 — Renta Vacacional Orquídea

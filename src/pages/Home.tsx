@@ -204,7 +204,7 @@ const Home: React.FC = () => {
           {/* Galería de imágenes estilo collage */}
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://live.staticflickr.com/65535/54505292232_3b6399cbc0_n.jpg"
+              src="https://live.staticflickr.com/65535/54505292232_3b6399cbc0_b.jpg"
               alt="Renta Vacacional Orquídea"
 
               className="rounded-xl w-full h-auto object-cover row-span-2"

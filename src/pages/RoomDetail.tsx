@@ -205,7 +205,7 @@ const RoomDetail = () => {
             <div className="flex gap-2 mb-4">
             {pricePerNight && (
                 <button
-                className={`px-4 py-2 rounded-full text-sm font-medium ${
+                className={`px-4 py-2 rounded-full text-sm font-medium  cursor-pointer ${
                     selectedPrice === "night" ? "bg-red-500 text-white" : "bg-gray-100"
                 }`}
                 onClick={() => setSelectedPrice("night")}
@@ -215,7 +215,7 @@ const RoomDetail = () => {
             )}
             {pricePerWeek && (
                 <button
-                className={`px-4 py-2 rounded-full text-sm font-medium ${
+                className={`px-4 py-2 rounded-full text-sm font-medium  cursor-pointer ${
                     selectedPrice === "week" ? "bg-red-500 text-white" : "bg-gray-100"
                 }`}
                 onClick={() => setSelectedPrice("week")}
@@ -225,7 +225,7 @@ const RoomDetail = () => {
             )}
             {pricePerMonth && (
                 <button
-                className={`px-4 py-2 rounded-full text-sm font-medium ${
+                className={`px-4 py-2 rounded-full text-sm font-medium cursor-pointer ${
                     selectedPrice === "month" ? "bg-red-500 text-white" : "bg-gray-100"
                 }`}
                 onClick={() => setSelectedPrice("month")}
