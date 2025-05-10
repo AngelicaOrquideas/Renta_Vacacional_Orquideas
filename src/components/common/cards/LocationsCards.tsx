@@ -109,9 +109,13 @@ const LocationsCards = () => {
             className="flex gap-6 overflow-x-auto scroll-smooth pb-4 no-scrollbar"
           >
             {locations.map((loc, i) => (
-              <div
+              <a
                 key={i}
-                className="min-w-[300px] max-w-xs flex-shrink-0 relative rounded-xl overflow-hidden shadow-md group cursor-pointer transition-transform hover:scale-[1.02]"
+                href={loc.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`Abrir ${loc.name} en Google Maps`}
+                className="min-w-[300px] max-w-xs flex-shrink-0 relative rounded-xl overflow-hidden shadow-md group cursor-pointer transition-transform hover:scale-[1.02] no-underline"
               >
                 <img
                   src={loc.image}
@@ -122,17 +126,13 @@ const LocationsCards = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 flex flex-col justify-end">
                   <h3 className="text-white font-semibold text-lg">{loc.name}</h3>
                   <p className="text-white text-sm">{loc.address}</p>
-                  <a
-                    href={loc.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-red-300 hover:underline mt-1"
-                  >
+                  <span className="text-sm text-red-300 hover:underline mt-1">
                     Ver en Google Maps
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </a>
             ))}
+
           </div>
         </div>
       </div>

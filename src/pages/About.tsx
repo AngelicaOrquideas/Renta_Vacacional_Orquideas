@@ -133,7 +133,7 @@ const About: React.FC = () => {
                 <div className="flex justify-center">
                     <div className="w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-red-100 shadow-xl flex items-center justify-center">
                     <img
-                        src="src/assets/Cancun.png"
+                        src="/assets/Cancun.png"
                         alt="Mapa decorativo"
                         className="w-full h-full object-cover"
                     />
@@ -161,7 +161,7 @@ const About: React.FC = () => {
             {/* Ilustración a la izquierda */}
             <div className="flex justify-center">
               <img
-                src="src/assets/undraw_tree-swing_5010.svg"
+                src="/assets/undraw_tree-swing_5010.svg"
                 alt="Historia de la empresa"
                 className="w-full max-w-md object-contain"
               />
