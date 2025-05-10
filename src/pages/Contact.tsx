@@ -54,7 +54,7 @@ const Contact = () => {
 
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/tuPagina"
+            href="https://www.facebook.com/angelica.flore.96"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
@@ -63,12 +63,12 @@ const Contact = () => {
               <FaFacebookF />
             </div>
             <p className="text-sm font-semibold">Facebook</p>
-            <p className="text-gray-600 text-sm">@tuPagina</p>
+            <p className="text-gray-600 text-sm">Maria A Flore </p>
           </a>
 
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/tuPerfil"
+            href="https://www.instagram.com/flore3970/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
@@ -77,7 +77,7 @@ const Contact = () => {
               <FaInstagram />
             </div>
             <p className="text-sm font-semibold">Instagram</p>
-            <p className="text-gray-600 text-sm">@tuPerfil</p>
+            <p className="text-gray-600 text-sm">flore3970</p>
           </a>
         </div>
       </section>
