@@ -1,5 +1,5 @@
 // src/components/common/Footer.tsx
-import { FaFacebookF, FaXTwitter, FaYoutube, FaInstagram } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa6";
 
 const instagramImages = [
   "https://live.staticflickr.com/65535/54475877739_d93bc31366_w.jpg",
@@ -21,10 +21,23 @@ const Footer = () => {
             Disfruta de una estancia cómoda, moderna y tranquila. Nuestro compromiso es tu descanso.
           </p>
           <div className="flex gap-4 text-red-500 text-xl">
-            <FaFacebookF className="hover:text-red-600 cursor-pointer transition duration-300" />
-            <FaXTwitter className="hover:text-red-600 cursor-pointer transition duration-300" />
-            <FaYoutube className="hover:text-red-600 cursor-pointer transition duration-300" />
-            <FaInstagram className="hover:text-red-600 cursor-pointer transition duration-300" />
+            <a href="https://wa.me/4421323281" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="hover:text-green-500 cursor-pointer transition duration-300" />
+            </a>
+            <a href="https://www.facebook.com/angelica.flore.96" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="hover:text-blue-600 cursor-pointer transition duration-300" />
+            </a>
+            <a href="https://www.instagram.com/flore3970/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-pink-500 cursor-pointer transition duration-300" />
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=floreslopezmaangelica@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope className="hover:text-yellow-500 cursor-pointer transition duration-300" />
+            </a>
+
           </div>
         </div>
 
@@ -45,7 +58,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-gray-600">
             <li><a href="#" className="hover:text-red-500 transition">Términos & Condiciones</a></li>
             <li><a href="#" className="hover:text-red-500 transition">Política de privacidad</a></li>
-            <li><a href="#" className="hover:text-red-500 transition">Guía de estilo</a></li>
+            
             <li><a href="#" className="hover:text-red-500 transition">Error 404</a></li>
           </ul>
         </div>
