@@ -11,6 +11,7 @@ import { Room } from "../../src/interfaces/Room";
 import { getPopularRooms } from "../../src/services/roomService";
 import RoomGallery from "../components/room/GallerySection";
 import * as PiIcons from "react-icons/pi";
+import { Helmet } from "react-helmet-async";
 
 
 const amenitiesList = [
@@ -82,12 +83,21 @@ const RoomDetail = () => {
 
   return (
     <>
+
+        <Helmet>
+          <title>{`${title} | Renta Vacacional Orquídea`}</title>
+          <meta
+            name="description"
+            content={`Reserva la habitación "${title}" en Cancún. Ideal para ${features.guests} huéspedes, con ${features.beds} camas y amenidades como ${features.wifi ? 'WiFi' : 'sin WiFi'}.`}
+          />
+        </Helmet>
+
       {/* HERO + RESERVA */}
       <div className="relative w-full h-[500px] md:aspect-[21/9] overflow-hidden mb-10 md:mb-40">
         <img
-            src={images[0]}
-            alt={title}
-            className="w-full h-full object-cover object-center"
+          src={images[0]}
+          alt={`Imagen principal de la habitación "${title}" en Cancún`}
+          className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 md:p-10">
           <h1 className="text-white text-3xl md:text-5xl font-bold">{title}</h1>
@@ -176,7 +186,7 @@ const RoomDetail = () => {
 
         <hr className="border-gray-300  border-t-2 my-10" />
 
-          <RoomGallery images={images.slice(1)} />
+          <RoomGallery images={images.slice(1)} title={title} />
           
           <div className="mt-10 mb-20">
             <h3 className="text-xl font-bold mb-6 border-b border-gray-300 pb-2">Ubicación</h3>

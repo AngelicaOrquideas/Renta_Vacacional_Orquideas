@@ -1,8 +1,15 @@
 // src/pages/About.tsx
+import { Helmet } from "react-helmet-async";
 
 const About: React.FC = () => {
     return (
       <>
+        <Helmet>
+        <title>Sobre Nosotros | Renta Vacacional Orquídea</title>
+        <meta
+          name="description"
+          content="Conoce más sobre nuestro compromiso, valores y filosofía de hospitalidad." />
+      </Helmet>
         {/* Hero Section - Sobre Nosotros */}
         <section
           className="relative min-h-[90vh] flex items-center justify-center text-white bg-no-repeat bg-center bg-cover bg-fixed"

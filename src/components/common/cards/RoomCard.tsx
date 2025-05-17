@@ -14,9 +14,10 @@ const RoomCard: FC<Room> = ({ id, title, images, pricePerNight, features, descri
       <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden w-full max-w-sm flex flex-col">
         <img
           src={images[0]}
-          alt={title}
+          alt={`Foto de la habitación "${title}" disponible en Cancún`}
           className="w-full h-48 object-cover"
         />
+
         <div className="p-5 flex flex-col justify-between flex-grow">
           {/* Título y descripción */}
           <div>

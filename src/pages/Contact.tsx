@@ -2,10 +2,19 @@
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import LocationsCards from "../components/common/cards/LocationsCards";
 import FaqSection from "../components/common/cards/FaqSection";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <>
+      {/* Helmet para SEO */}
+      <Helmet>
+        <title>Contáctanos | Renta Vacacional Orquídea</title>
+        <meta
+          name="description"
+          content="¿Tienes alguna duda, solicitud o sugerencia? Comunícate con nosotros por WhatsApp, redes sociales o llamada telefónica."
+        />
+      </Helmet>
       {/* HERO */}
       <section
         className="relative min-h-[90vh] flex items-center justify-center text-white bg-center bg-cover bg-fixed"
@@ -24,7 +33,6 @@ const Contact = () => {
           </p>
         </div>
       </section>
-
 
       {/* CONTACTO DIRECTO */}
       <section className="bg-[#FFF8E7] py-20 px-6 md:px-12">
@@ -87,7 +95,6 @@ const Contact = () => {
         <section id="ubicaciones" className="bg-white py-20 px-6 md:px-12 relative">
         <LocationsCards />
         </section>
-
 
         <FaqSection />
       

@@ -6,6 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { MdInfoOutline } from "react-icons/md";
+import { Helmet } from "react-helmet-async";
 
 
 const Home: React.FC = () => {
@@ -27,6 +28,14 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Inicio | Renta Vacacional Orquídea</title>
+        <meta
+          name="description"
+          content="Renta habitaciones vacacionales en Cancún. Cómodas, modernas y accesibles. Descubre la experiencia Orquídea."
+        />
+      </Helmet>
+
       {/* Hero */}
       <div
         className="relative min-h-screen flex items-center justify-center text-white bg-cover bg-no-repeat bg-center sm:bg-[center_top]"

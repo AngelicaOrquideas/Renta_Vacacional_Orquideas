@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef } from 'react'
 import { IoClose, IoChevronBack, IoChevronForward } from 'react-icons/io5'
 
-const RoomGallery = ({ images }: { images: string[] }) => {
+
+const RoomGallery = ({ images, title }: { images: string[]; title: string }) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const [isHovering, setIsHovering] = useState(false)
   const modalRef = useRef<HTMLDivElement | null>(null)
@@ -28,6 +29,8 @@ const RoomGallery = ({ images }: { images: string[] }) => {
     if (e.target === modalRef.current) closeModal()
   }
 
+  
+
   return (
     <div className="my-10">
       <h3 className="text-xl font-bold mb-6 pb-2">Galería de la habitación</h3>
@@ -42,7 +45,7 @@ const RoomGallery = ({ images }: { images: string[] }) => {
           >
             <img
               src={img}
-              alt={`Imagen ${i + 1}`}
+              alt={`Imagen ${i + 1} de la habitación ${title}`}
               className="w-full h-auto rounded-xl object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
@@ -76,7 +79,7 @@ const RoomGallery = ({ images }: { images: string[] }) => {
           <img
             key={selectedIndex} // importante para reiniciar animación
             src={images[selectedIndex]}
-            alt={`Imagen ${selectedIndex + 1}`}
+            alt={`Imagen ${selectedIndex + 1} de la habitación ${title}`}
             className="max-w-[95vw] max-h-[90vh] rounded-2xl shadow-2xl object-contain animate-fade-in"
           />
 
@@ -106,7 +109,7 @@ const RoomGallery = ({ images }: { images: string[] }) => {
               <img
                 key={idx}
                 src={thumb}
-                alt={`Miniatura ${idx + 1}`}
+                alt={`Miniatura ${idx + 1} de la habitación ${title}`}
                 onClick={() => setSelectedIndex(idx)}
                 className={`w-14 h-14 object-cover rounded-md border-2 ${
                   selectedIndex === idx ? 'ring-2 ring-red-500' : 'ring-1 ring-white/20'
