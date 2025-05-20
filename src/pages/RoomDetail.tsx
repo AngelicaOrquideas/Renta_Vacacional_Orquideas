@@ -11,7 +11,8 @@ import { Room } from "../../src/interfaces/Room";
 import { getPopularRooms } from "../../src/services/roomService";
 import RoomGallery from "../components/room/GallerySection";
 import * as PiIcons from "react-icons/pi";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from 'react-helmet';
+
 
 
 const amenitiesList = [

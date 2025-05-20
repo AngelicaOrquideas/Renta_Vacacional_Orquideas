@@ -1,6 +1,7 @@
 // src/pages/Rooms.tsx (o donde renders RoomListSection)
 import RoomListSection from "../components/room/RoomListSection";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from 'react-helmet';
+
 
 const Rooms = () => {
   return (

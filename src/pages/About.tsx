@@ -1,5 +1,6 @@
 // src/pages/About.tsx
-import { Helmet } from "react-helmet-async";
+import { Helmet } from 'react-helmet';
+
 
 const About: React.FC = () => {
     return (
