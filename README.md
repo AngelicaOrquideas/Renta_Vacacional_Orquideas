@@ -88,7 +88,7 @@ npm run build
 
 ## 📷 Vista previa
 
-<img src="https://live.staticflickr.com/65535/54533206557_82bcf75427_z.jpg" alt="Preview" width="100%" />
+<img src="https://live.staticflickr.com/65535/54533206557_82bcf75427_b.jpg" alt="Preview" width="100%" />
 
 
 ---
