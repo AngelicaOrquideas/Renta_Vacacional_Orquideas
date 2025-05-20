@@ -1,38 +1,39 @@
-# 🌺 Renta Vacacional Orquídea
+# Renta Vacacional Orquídea 🌴🏖️
 
-Sitio web responsivo para mostrar información de alojamientos vacacionales en Cancún, Quintana Roo.  
-Construido con React + TypeScript + Tailwind CSS + Vite.
+Sitio web profesional para ofrecer **alojamientos vacacionales en Cancún**, con información de habitaciones, ubicación, descripción del servicio y contacto directo.
+
+🔗 [Visita el sitio web](https://rentavacacionalorquideas.com.mx)
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
-- ⚛️ **React 19** – Componentes y navegación SPA
-- 🧠 **TypeScript** – Tipado estático y seguridad
-- 💨 **Tailwind CSS** – Utilidades de diseño modernas
-- ⚡ **Vite** – Empaquetador ultrarrápido
-- 📦 **Lazy Loading** – Carga diferida de rutas
-- 🎨 **React Icons / Lucide** – Íconos visuales
-- 🔁 **Axios** – Peticiones HTTP a servicios
-- 📱 **Responsive Design** – Adaptado a todos los dispositivos
+- **React** + **TypeScript**
+- **Vite** como bundler
+- **Tailwind CSS** para estilos rápidos y responsivos
+- **Framer Motion** para animaciones
+- **React Router DOM** para navegación entre vistas
+- **React Helmet Async** para SEO dinámico
+- **Netlify** para despliegue
+- **Google Search Console** para indexación y posicionamiento SEO
 
 ---
 
 ## 📁 Estructura del proyecto
 
-```bash
-src/
-├── assets/                  # Imágenes y recursos
-├── components/              # Componentes reutilizables
-│   ├── common/              # Navbar, Footer, Spinner, etc.
-│   ├── room/                # Galería y listado de cuartos
-├── data/                    # rooms.json (datos simulados)
-├── interfaces/              # Tipos TypeScript
-├── pages/                   # Vistas principales (Home, About, Contact, Rooms)
-├── routes/                  # Ruteo con React Router
-├── services/                # Lógica para traer habitaciones
-├── App.tsx                  # Composición principal
-├── main.tsx                 # Entrada del proyecto
+```
+/public
+  ├── favicon.png
+  ├── robots.txt
+  ├── sitemap.xml
+/src
+  ├── components/
+  ├── interfaces/
+  ├── pages/
+  ├── routes/
+  ├── services/
+  ├── App.tsx
+  └── main.tsx
 ```
 
 ---
@@ -42,8 +43,8 @@ src/
 ### 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/Carlos-Alejandro/Renta-Vacacional-Orqu-deas.git
-cd Renta-Vacacional-Orqu-deas
+git clone https://github.com/AngelicaOrquideas/Renta_Vacacional_Orquideas.git
+cd Renta_Vacacional_Orquideas
 ```
 
 ### 2. Instala dependencias
@@ -58,18 +59,35 @@ npm install
 npm run dev
 ```
 
-Abre tu navegador en [http://localhost:5173](http://localhost:5173)
+4. Genera el build de producción:
+
+```bash
+npm run build
+```
 
 ---
 
-## 🧼 Scripts útiles
+## ✅ Optimización SEO
 
-```bash
-npm run dev       # Inicia el servidor local
-npm run build     # Genera versión optimizada para producción
-npm run preview   # Previsualiza la versión de producción
-npm run lint      # (si tienes ESLint activado)
-```
+- Se usan etiquetas `<Helmet>` para personalizar el `title`, `meta description` y `og:image` por página.
+- Se implementó `robots.txt` y `sitemap.xml`.
+- El sitio está **indexado en Google Search Console**.
+- Las imágenes están siendo detectadas por **Google Imágenes**.
+
+---
+
+## 📷 Vista previa
+
+![Preview](https://rentavacacionalorquideas.com.mx/preview.jpg) <!-- Puedes agregar una imagen personalizada -->
+
+---
+
+## 📌 Características principales
+
+- 📍 Ubicación: Cancún, Quintana Roo.
+- 🛏️ Sección de habitaciones con descripción y galería.
+- 📱 Totalmente responsive.
+- 📧 Contacto directo a través de WhatsApp y redes sociales.
 
 ---
 
@@ -92,13 +110,13 @@ npm run lint      # (si tienes ESLint activado)
 
 ---
 
-## 📷 Captura de ejemplo
+## 👩‍💻 Autor
 
-![Demo](https://live.staticflickr.com/65535/54475877739_d93bc31366_b.jpg)
+**Angelica Orquídea**  
+[Renta Vacacional Orquídea](https://rentavacacionalorquideas.com.mx)
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto está desarrollado con fines demostrativos y educativos.  
-© 2025 — Renta Vacacional Orquídea
+Este proyecto es de uso personal/comercial. No redistribuir sin autorización.
