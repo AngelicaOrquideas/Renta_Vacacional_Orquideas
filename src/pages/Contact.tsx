@@ -2,7 +2,8 @@
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import LocationsCards from "../components/common/cards/LocationsCards";
 import FaqSection from "../components/common/cards/FaqSection";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
+
 
 
 const Contact = () => {

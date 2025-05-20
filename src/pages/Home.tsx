@@ -6,7 +6,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { MdInfoOutline } from "react-icons/md";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
+
 
 
 
