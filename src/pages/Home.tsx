@@ -87,11 +87,33 @@ const Home: React.FC = () => {
             </Link>
           </div>
         </div>
+
+        {/* Botón scroll hacia abajo */}
+            <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20">
+            <button
+                onClick={() => {
+                    const section = document.getElementById("rentados");
+                    section?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/20 transition cursor-pointer"
+                >
+                <svg
+                    className="w-6 h-6 animate-bounce"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    viewBox="0 0 24 24"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            </div>
       </div>
 
 
       {/* Sección: Explora nuestros cuartos más rentados */}
-      <section className="bg-white py-16 px-4 md:px-8">
+      <section id="rentados" className="bg-white py-16 px-4 md:px-8 scroll-mt-28">
+
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">

@@ -6,51 +6,22 @@ Sitio web profesional para ofrecer **alojamientos vacacionales en Cancún**, con
 
 ---
 
-## 🚀 Tecnologías utilizadas
-
-### 🧰 Tecnologías utilizadas
-
-<h3 align="center">🛠️ Tecnologías utilizadas</h3>
-
-<p align="center">
-  <a href="https://reactjs.org/" target="_blank" title="React">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40" alt="React" />
-  </a>
-  &nbsp;
-  <a href="https://www.typescriptlang.org/" target="_blank" title="TypeScript">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
-  </a>
-  &nbsp;
-  <a href="https://vitejs.dev/" target="_blank" title="Vite">
-    <img src="https://vitejs.dev/logo.svg" width="40" height="40" alt="Vite" />
-  </a>
-  &nbsp;
-  <a href="https://tailwindcss.com/" target="_blank" title="Tailwind CSS">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="40" height="40" alt="Tailwind CSS" />
-  </a>
-  &nbsp;
-  <a href="https://www.framer.com/motion/" target="_blank" title="Framer Motion">
-    <img src="https://raw.githubusercontent.com/framer/logos/main/mark/framer-icon.svg" width="40" height="40" alt="Framer Motion" />
-  </a>
-  &nbsp;
-  <a href="https://reactrouter.com/" target="_blank" title="React Router DOM">
-    <img src="https://reactrouter.com/favicon-light.png" width="40" height="40" alt="React Router DOM" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/staylor/react-helmet-async" target="_blank" title="React Helmet Async">
-    <img src="https://raw.githubusercontent.com/staylor/react-helmet-async/main/logo.png" width="40" height="40" alt="Helmet Async" />
-  </a>
-  &nbsp;
-  <a href="https://www.netlify.com/" target="_blank" title="Netlify">
-    <img src="https://www.netlify.com/v3/img/components/logomark.png" width="40" height="40" alt="Netlify" />
-  </a>
-  &nbsp;
-  <a href="https://search.google.com/search-console" target="_blank" title="Google Search Console">
-    <img src="https://www.gstatic.com/images/branding/product/1x/search_console_48dp.png" width="40" height="40" alt="Google Search Console" />
-  </a>
-</p>
+## 🧰 Tecnologías utilizadas
 
 
+- ⚛️ **React 19** – Componentes y navegación SPA  
+- 🧠 **TypeScript** – Tipado estático y seguridad  
+- 💨 **Tailwind CSS** – Utilidades de diseño modernas  
+- ⚡ **Vite** – Empaquetador ultrarrápido  
+- 📦 **Lazy Loading** – Carga diferida de rutas  
+- 🎨 **React Icons / Lucide** – Íconos visuales  
+- 🔁 **Axios** – Peticiones HTTP a servicios  
+- 📱 **Responsive Design** – Adaptado a todos los dispositivos  
+- 🎬 **Framer Motion** – Animaciones fluidas y modernas  
+- 🧭 **React Router DOM** – Navegación entre vistas  
+- 🔍 **React Helmet Async** – SEO dinámico por ruta  
+- ☁️ **Netlify** – Despliegue automático continuo  
+- 📈 **Google Search Console** – Indexación y monitoreo SEO
 
 ---
 

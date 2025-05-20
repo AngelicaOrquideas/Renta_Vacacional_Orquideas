@@ -54,7 +54,7 @@ const About: React.FC = () => {
 
         {/* Sección de Ubicaciones */}
 
-        <section id="locations" className="bg-white py-20 px-6 md:px-12">
+        <section id="locations" className="bg-white py-20 px-6 md:px-12 scroll-mt-28">
             <div className="max-w-5xl mx-auto text-center">
                 {/* Título */}
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">

@@ -109,10 +109,11 @@ const Navbar = () => {
 
       {/* Sidebar lateral móvil */}
       <aside
-        className={`fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-500 ease-in-out z-50 ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-500 ease-in-out z-50 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
+
         {/* Encabezado del menú */}
         <div className="flex justify-between items-center p-4 border-b">
           <h2 className="text-lg font-bold">Menú</h2>
