@@ -10,15 +10,36 @@ Sitio web profesional para ofrecer **alojamientos vacacionales en Cancún**, con
 
 ### 🧰 Tecnologías utilizadas
 
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB&style=flat)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat)
-![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=flat)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=flat)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?logo=framer&logoColor=white&style=flat)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white&style=flat)
-![Helmet Async](https://img.shields.io/badge/Helmet-121212?logo=react&logoColor=white&style=flat)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white&style=flat)
-![Google Search Console](https://img.shields.io/badge/Google_Search_Console-4285F4?logo=google&logoColor=white&style=flat)
+<p align="left">
+  <a href="https://reactjs.org/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40" height="40"/>
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
+  </a>
+  <a href="https://vitejs.dev/" target="_blank">
+    <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40"/>
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" width="40" height="40"/>
+  </a>
+  <a href="https://www.framer.com/motion/" target="_blank">
+    <img src="https://raw.githubusercontent.com/framer/logos/main/mark/framer-icon.svg" alt="Framer Motion" width="40" height="40"/>
+  </a>
+  <a href="https://reactrouter.com/" target="_blank">
+    <img src="https://reactrouter.com/favicon-light.png" alt="React Router DOM" width="40" height="40"/>
+  </a>
+  <a href="https://github.com/staylor/react-helmet-async" target="_blank">
+    <img src="https://raw.githubusercontent.com/staylor/react-helmet-async/main/logo.png" alt="Helmet Async" width="40" height="40"/>
+  </a>
+  <a href="https://www.netlify.com/" target="_blank">
+    <img src="https://www.netlify.com/v3/img/components/logomark.png" alt="Netlify" width="40" height="40"/>
+  </a>
+  <a href="https://search.google.com/search-console" target="_blank">
+    <img src="https://www.gstatic.com/images/branding/product/1x/search_console_48dp.png" alt="Google Search Console" width="40" height="40"/>
+  </a>
+</p>
+
 
 
 ---
