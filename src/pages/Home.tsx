@@ -33,6 +33,7 @@ const Home: React.FC = () => {
         <meta
           name="description"
           content="Renta habitaciones vacacionales en Cancún. Cómodas, modernas y accesibles. Descubre la experiencia Orquídea."
+           
         />
       </Helmet>
 
