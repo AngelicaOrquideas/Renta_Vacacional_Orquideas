@@ -10,33 +10,43 @@ Sitio web profesional para ofrecer **alojamientos vacacionales en Cancún**, con
 
 ### 🧰 Tecnologías utilizadas
 
-<p align="left">
-  <a href="https://reactjs.org/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40" height="40"/>
+<h3 align="center">🛠️ Tecnologías utilizadas</h3>
+
+<p align="center">
+  <a href="https://reactjs.org/" target="_blank" title="React">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40" alt="React" />
   </a>
-  <a href="https://www.typescriptlang.org/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
+  &nbsp;
+  <a href="https://www.typescriptlang.org/" target="_blank" title="TypeScript">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
   </a>
-  <a href="https://vitejs.dev/" target="_blank">
-    <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40"/>
+  &nbsp;
+  <a href="https://vitejs.dev/" target="_blank" title="Vite">
+    <img src="https://vitejs.dev/logo.svg" width="40" height="40" alt="Vite" />
   </a>
-  <a href="https://tailwindcss.com/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" width="40" height="40"/>
+  &nbsp;
+  <a href="https://tailwindcss.com/" target="_blank" title="Tailwind CSS">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="40" height="40" alt="Tailwind CSS" />
   </a>
-  <a href="https://www.framer.com/motion/" target="_blank">
-    <img src="https://raw.githubusercontent.com/framer/logos/main/mark/framer-icon.svg" alt="Framer Motion" width="40" height="40"/>
+  &nbsp;
+  <a href="https://www.framer.com/motion/" target="_blank" title="Framer Motion">
+    <img src="https://raw.githubusercontent.com/framer/logos/main/mark/framer-icon.svg" width="40" height="40" alt="Framer Motion" />
   </a>
-  <a href="https://reactrouter.com/" target="_blank">
-    <img src="https://reactrouter.com/favicon-light.png" alt="React Router DOM" width="40" height="40"/>
+  &nbsp;
+  <a href="https://reactrouter.com/" target="_blank" title="React Router DOM">
+    <img src="https://reactrouter.com/favicon-light.png" width="40" height="40" alt="React Router DOM" />
   </a>
-  <a href="https://github.com/staylor/react-helmet-async" target="_blank">
-    <img src="https://raw.githubusercontent.com/staylor/react-helmet-async/main/logo.png" alt="Helmet Async" width="40" height="40"/>
+  &nbsp;
+  <a href="https://github.com/staylor/react-helmet-async" target="_blank" title="React Helmet Async">
+    <img src="https://raw.githubusercontent.com/staylor/react-helmet-async/main/logo.png" width="40" height="40" alt="Helmet Async" />
   </a>
-  <a href="https://www.netlify.com/" target="_blank">
-    <img src="https://www.netlify.com/v3/img/components/logomark.png" alt="Netlify" width="40" height="40"/>
+  &nbsp;
+  <a href="https://www.netlify.com/" target="_blank" title="Netlify">
+    <img src="https://www.netlify.com/v3/img/components/logomark.png" width="40" height="40" alt="Netlify" />
   </a>
-  <a href="https://search.google.com/search-console" target="_blank">
-    <img src="https://www.gstatic.com/images/branding/product/1x/search_console_48dp.png" alt="Google Search Console" width="40" height="40"/>
+  &nbsp;
+  <a href="https://search.google.com/search-console" target="_blank" title="Google Search Console">
+    <img src="https://www.gstatic.com/images/branding/product/1x/search_console_48dp.png" width="40" height="40" alt="Google Search Console" />
   </a>
 </p>
 
