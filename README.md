@@ -8,14 +8,18 @@ Sitio web profesional para ofrecer **alojamientos vacacionales en Cancún**, con
 
 ## 🚀 Tecnologías utilizadas
 
-- ⚛️ **React 19** – Componentes y navegación SPA
-- 🧠 **TypeScript** – Tipado estático y seguridad
-- 💨 **Tailwind CSS** – Utilidades de diseño modernas
-- ⚡ **Vite** – Empaquetador ultrarrápido
-- 📦 **Lazy Loading** – Carga diferida de rutas
-- 🎨 **React Icons / Lucide** – Íconos visuales
-- 🔁 **Axios** – Peticiones HTTP a servicios
-- 📱 **Responsive Design** – Adaptado a todos los dispositivos
+### 🧰 Tecnologías utilizadas
+
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB&style=flat)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=flat)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=flat)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?logo=framer&logoColor=white&style=flat)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white&style=flat)
+![Helmet Async](https://img.shields.io/badge/Helmet-121212?logo=react&logoColor=white&style=flat)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white&style=flat)
+![Google Search Console](https://img.shields.io/badge/Google_Search_Console-4285F4?logo=google&logoColor=white&style=flat)
+
 
 ---
 
