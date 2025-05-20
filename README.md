@@ -1,4 +1,4 @@
-# Renta Vacacional Orquídea 🌴🏖️
+# 🌺 Renta Vacacional Orquídea 🌴🏖️
 
 Sitio web profesional para ofrecer **alojamientos vacacionales en Cancún**, con información de habitaciones, ubicación, descripción del servicio y contacto directo.
 
@@ -6,34 +6,38 @@ Sitio web profesional para ofrecer **alojamientos vacacionales en Cancún**, con
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🚀 Tecnologías utilizadas
 
-- **React** + **TypeScript**
-- **Vite** como bundler
-- **Tailwind CSS** para estilos rápidos y responsivos
-- **Framer Motion** para animaciones
-- **React Router DOM** para navegación entre vistas
-- **React Helmet Async** para SEO dinámico
-- **Netlify** para despliegue
-- **Google Search Console** para indexación y posicionamiento SEO
+- ⚛️ **React 19** – Componentes y navegación SPA
+- 🧠 **TypeScript** – Tipado estático y seguridad
+- 💨 **Tailwind CSS** – Utilidades de diseño modernas
+- ⚡ **Vite** – Empaquetador ultrarrápido
+- 📦 **Lazy Loading** – Carga diferida de rutas
+- 🎨 **React Icons / Lucide** – Íconos visuales
+- 🔁 **Axios** – Peticiones HTTP a servicios
+- 📱 **Responsive Design** – Adaptado a todos los dispositivos
 
 ---
 
 ## 📁 Estructura del proyecto
 
 ```
-/public
-  ├── favicon.png
-  ├── robots.txt
-  ├── sitemap.xml
-/src
-  ├── components/
-  ├── interfaces/
-  ├── pages/
-  ├── routes/
-  ├── services/
-  ├── App.tsx
-  └── main.tsx
+public/
+  ├── favicon.png           # Ícono del sitio web que se muestra en las pestañas del navegador (favicon).
+  ├── robots.txt            # Archivo que indica a los motores de búsqueda qué URLs pueden rastrear.
+  ├── sitemap.xml           # Mapa del sitio en formato XML para ayudar a los motores de búsqueda indexar las páginas correctamente.
+src/
+├── assets/                  # Imágenes y recursos
+├── components/              # Componentes reutilizables
+│   ├── common/              # Navbar, Footer, Spinner, etc.
+│   ├── room/                # Galería y listado de cuartos
+├── data/                    # rooms.json (datos simulados)
+├── interfaces/              # Tipos TypeScript
+├── pages/                   # Vistas principales (Home, About, Contact, Rooms)
+├── routes/                  # Ruteo con React Router
+├── services/                # Lógica para traer habitaciones
+├── App.tsx                  # Composición principal
+├── main.tsx                 # Entrada del proyecto
 ```
 
 ---
