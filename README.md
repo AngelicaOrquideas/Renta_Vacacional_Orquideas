@@ -88,7 +88,7 @@ npm run build
 
 ## 📷 Vista previa
 
-![Preview](https://rentavacacionalorquideas.com.mx/preview.jpg) <!-- Puedes agregar una imagen personalizada -->
+![Preview]([https://rentavacacionalorquideas.com.mx/preview.jpg](https://live.staticflickr.com/65535/54533206557_82bcf75427_z.jpg)) <!-- Puedes agregar una imagen personalizada -->
 
 ---
 
