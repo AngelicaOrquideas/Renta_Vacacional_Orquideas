@@ -125,13 +125,6 @@ npm run build
 
 ---
 
-## 👩‍💻 Autor
-
-**Angelica Orquídea**  
-[Renta Vacacional Orquídea](https://rentavacacionalorquideas.com.mx)
-
----
-
 ## 📄 Licencia
 
 Este proyecto es de uso personal/comercial. No redistribuir sin autorización.
